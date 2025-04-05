@@ -12,7 +12,7 @@ jobs:
           echo "Running on ${{ runner.os }} with ${{ runner.arch }}"
   windows-echo:
     runs-on: windows-latest
-    stpes:
+    steps:
       - name: Show OS
         run: |
           echo "This job is running on an Windows runner"
