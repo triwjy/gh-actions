@@ -10,3 +10,10 @@ jobs:
         run: |
           echo "This job is running on an Ubuntu runner"
           echo "Running on ${{ runner.os }} with ${{ runner.arch }}"
+  windows-echo:
+    runs-on: windows-latest
+    stpes:
+      - name: Show OS
+        run: |
+          echo "This job is running on an Windows runner"
+          echo "Running on ${{ runner.os }} with ${{ runner.arch }}"
