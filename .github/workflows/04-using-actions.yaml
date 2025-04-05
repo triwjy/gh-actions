@@ -1,0 +1,24 @@
+name: 04 - Using Actions
+on: 
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # 0. Checkout the code from the repository
+    # 1. Install dependencies of our react app
+    # 2. Run the tests
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Printing folders
+        run: ls
+      # - name: Set up Node.js
+      #   uses: actions/setup-node@v2
+      #   with:
+      #     node-version: '14'
+      # - name: Install dependencies
+      #   run: npm install
+      # - name: Run tests
+      #   run: npm test
