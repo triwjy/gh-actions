@@ -1,6 +1,7 @@
 name: 04 - Using Actions
+
 on: 
-  push:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -9,10 +10,6 @@ jobs:
       run:
         # this will be executed automatically everytime 'run' is executed
         working-directory: 04-using-actions/react-app
-
-    # 0. Checkout the code from the repository
-    # 1. Install dependencies of our react app
-    # 2. Run the tests
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
