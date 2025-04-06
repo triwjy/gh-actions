@@ -1,4 +1,4 @@
-name: 05 - 1- Event Filters and Activity Types
+name: 05 - 1 - Event Filters and Activity Types
 
 on:
   # if activity type is not specified, it will opened, reopened, or synchronized by default
