@@ -42,3 +42,10 @@ jobs:
           echo "Workflow env: ${{ env.MY_WORKFLOW_VAR }}"
           echo "Job env: ${{ env.MY_JOB_VAR }}"
           echo "Overwrite env: ${{ env.MY_OVERWRITE_VAR }}"
+  echo-data2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Env Variables with declared step env
+        run: |
+          echo "Workflow env: $MY_WORKFLOW_VAR"
+          echo "Overwrite env: $MY_OVERWRITE_VAR"
