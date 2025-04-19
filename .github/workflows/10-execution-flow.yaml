@@ -20,7 +20,7 @@ jobs:
           # npm run build
   unit-test:
     runs-on: ubuntu-latest
-    continue-on-error: true
+    continue-on-error: true # This will allow the workflow to continue even if this job fails (the wf status will be sucessful even if this job fails)
     steps:
       - name: Unit tests
         run: echo "Running unit tests"
